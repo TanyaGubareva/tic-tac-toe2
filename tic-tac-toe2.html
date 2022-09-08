@@ -1,0 +1,35 @@
+<!doctype html>
+
+
+<head>
+    <title>Online jQuery Editor</title>
+    <script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+  <style>
+    button {
+      width: 60px;
+      height: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <button type='button'></button>
+  <button type='button'></button>
+  <button type='button'></button></br>
+  <button type='button'></button>
+  <button type='button'></button>
+   <button type='button'></button></br>
+ <button type='button'></button>
+ <button type='button'></button>
+ <button type='button'></button>
+    <script>
+      let firstPlayer = '0';
+      $('button').click(function() {
+      let newPlayer =  firstPlayer !== '0'  ? '0' : 'X'
+        $(this).html(newPlayer);
+        firstPlayer = newPlayer;
+      });
+    </script>
+</body>
+
+</html>
